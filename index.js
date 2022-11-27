@@ -6,3 +6,9 @@ function year(x){
    console.log(x)
 }
 year(200);
+function chuoi(){
+   let ten = ["Xin", "Chào", "Mình", "Tên", "Là"];
+   let ten2 = [" BTIC"]
+   console.log(ten.join(" ") + ten2); 
+}
+chuoi();
