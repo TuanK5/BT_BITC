@@ -47,31 +47,3 @@ if (posiNum2()){
 }else{
    console.log('no result');
 }
-//BT6
-console.log('bt6: ');
-let data5 =[1,5,30,26]
-function test5(e){
-   if(e % 5==0)
-   console.log(e);  
-}
-data5.forEach(test5);
-//BT7
-console.log('bt7: ');
-let data6 =[-1,2,3,4,2,6]
-console.log('first index: '+data6.indexOf(2),'last index: '+data6.lastIndexOf(2));
-//BT8
-console.log('bt8: ');
-let data7=['A','B','C']
-console.log(data7.join(", "));
-//BT9
-console.log('bt9: ');
-let data8 =[2, -2, 5]
-function tst(element){
-   if(element<0){
-      return element = element*-1
-   }else{
-      return element
-   }
-}
-let maping = data8.map(tst)
-console.log(maping);
