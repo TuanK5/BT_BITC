@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="root"></h1>
+    <div id="test"></div>
+    <ul id="list">
+      <li>
+        <h3>Viet</h3>
+        <p>20</p>
+      </li>
+    </ul>
+    <!-- <div class="test1"></div>
+    0
+    <div class="test1"></div>
+    1
+    <div class="test1"></div>
+    2
+    <div class="test">
+      <a href=""></a>
+    </div> -->
+    <button>Click me</button>
+    <script>
+      // console.log(document.getElementById("test"));
+      // console.log(document.getElementsByClassName("test1")[0]);
+      // console.log(document.querySelector(".test1"));
+      // console.log(document.querySelectorAll(".test1")[2]);
+      // console.log(document.querySelector("#test .test2 a"));
+      // console.log(document.getElementsByTagName("button"));
+      // console.log(document.querySelector("button").addEventListener);
+      // document.querySelector("button").onclick = function () {
+      //   document.getElementById("test").style.background = "pink";
+      // };
+      // let colors = ["yellow", "red", "green" ];
+      // let random = Math.floor(Math.random() * colors.length);
+      // document.getElementById("test").style.background = `${colors[random]}`;
+
+      // setInterval(() => {
+      //   let random = Math.floor(Math.random() * colors.length);
+      //   document.getElementById("test").style.background = `${colors[random]}`;
+      // }, 900);
+      // lấy button
+      // let btn = document.querySelector('button')
+      // lấy hộp màu
+      //       let box = document.querySelector('#test')
+      // let isColor = true
+      //       btn.addEventListener('click',() =>{
+      //                 if(isColor===true){
+      //           box.style.background = 'pink'
+      //           isColor = false
+      //         }
+      //         else{
+      //           box.style.background = 'red'
+      //           isColor = true
+      //         }
+      //       })
+
+      // btn.onclick = function(){
+      //   if(isColor===true){
+      //     box.style.background = 'pink'
+      //     isColor = false
+      //   }
+      //   else{
+      //     box.style.background = 'red'
+      //     isColor = true
+      //   }
+      // }
+
+      // let btn = document.querySelector('button')
+      // console.log(btn);
+      // let text = document.querySelector('#root')
+      // console.log(text);
+      // btn.onclick = function(){
+      //   text.innerText = 'abc'
+      //   // text.innerHTML = '<a href="/">get link</a>'
+      // }
+
+      let personList = [
+        {
+          name: "Viet",
+          age: 20,
+        },
+        {
+          name: "Tuan",
+          age: 21,
+        },
+        {
+          name: "Vu",
+          age: 20,
+        },
+      ];
+
+      //lay ul
+      let listPer = document.querySelector("#list");
+      console.log(listPer);
+      let newUL = personList.map((item) => {
+        return `<li>
+        <h3>${item.name}</h3>
+        <p>${item.age}</p>
+      </li>`;
+      });
+      listPer.innerHTML = newUL.join();
+      abc = "bitc"
+      console.log(`${abc}`);
+    </script>
+  </body>
+  <style>
+    #test {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</html>

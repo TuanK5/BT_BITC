@@ -25,3 +25,14 @@ function test(luutru, giatri) {
 }
 let sum = tong.reduce(test, 0);
 console.log(sum);
+let obj1 = {name: 'viet', age: 20}
+boj1.address = 'DN'
+// lấy 1 cái tên thôi
+console.log (obj1.name); 
+console.log['name']
+
+delete obj1.age
+console.log (typeof obj1);
+
+let bbj1 = {name: 'viet', age: 20, arr:[0,1,2],
+fc:function(){console.log(123)}}
